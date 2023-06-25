@@ -1,15 +1,47 @@
-body{
+*{
   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  font-weight: 100px;
+}
+
+h2{
+  color: white;
+  font-size: 40px;
+}
+
+h3{
+  color: white;
+  font-size: 34px;
+}
+
+h6{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+p{
+
+  font-size: 20px;
 }
 
 nav .nav_content{
   display: flex;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   background-color: black;
   color: white;
   align-items: center;
   justify-content: space-between;
-  
+  border-bottom: 0.1px solid #5c5959;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -22,7 +54,6 @@ nav .nav_content img{
 nav .nav_content ul{
   list-style: none;
   display: flex;
-  /* justify-content: center; */
 }
 
 nav .nav_content ul li{
@@ -39,15 +70,93 @@ nav .nav_content i{
       
 }
 
-.underline{
-  text-decoration: underline;
-  color: white;
-}
-
 .home{
   background: url(image/home-img.jpeg) no-repeat;
   height: 100vh;
   align-items: center;
   background-size: cover;
   background-position: center;
+  /* border-bottom: 0.1px solid #5c5959; */
+  color: white;
+  padding-bottom: 1px;
+}
+
+.home_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    margin-left: 80px;
+}
+
+.home_heading{
+  margin-bottom: 0px;
+}
+
+.home_content button{
+      width: 15%;
+      padding: 10px;
+      background: #d3ad7f;
+      color: white;
+      border: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 50px;
+      margin-top: 16px;
+    }
+
+
+
+.about{
+  background: black;
+  height: 70vh;
+  color: white;
+  align-items: center;
+}
+
+.about h2{
+     text-align: center;  
+}
+
+.about h2 span{
+  color: #d3ad7f;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  background:#13131a ;
+   width: 80%;
+   margin-left: 120px;
+   margin-top: 30px;
+  /* display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start; */
+}
+
+.about .row .image img{
+  width: 100%;
+} 
+
+.about .row .info {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .info h3{
+    margin-bottom: 7px;
+}
+
+.about .row .info p{
+    margin-bottom: 9px;
+}
+
+.about .row .info button{
+   width: 120px;
+   padding: 10px;
+   border: #13131a;
+   background-color: #d3ad7f;
+   color: white;
 }
