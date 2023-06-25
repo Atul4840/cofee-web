@@ -20,6 +20,18 @@ h3{
   font-size: 34px;
 }
 
+h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: white;
+  font-size: 26px;
+}
+
+h5{
+  color: white;
+  font-size:22px ;
+}
+
 h6{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 13px;
@@ -160,3 +172,155 @@ nav .nav_content i{
    background-color: #d3ad7f;
    color: white;
 }
+
+.menu{
+  background: black;
+  height: 120vh;
+}
+
+.menu h2{
+  text-align: center;
+  padding: 30px;
+}
+
+.menu h2 span{
+  color: #d3ad7f;
+}
+
+.item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_card{
+  width: 30%;
+  height: 50vh;
+   display: grid;
+   place-items: center;
+  border: 1px solid rgb(78, 75, 75);
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.item_card .price{
+  display: flex;
+  color: white;
+}
+
+.item_card .price h6{
+     margin-left: 4px;
+     text-decoration: line-through;
+     text-decoration-line:line-through;
+}
+
+.item_card img{
+   width: 120px;
+   border: #5c5959;
+}
+
+.item_card button{
+    padding: 10px;
+    width: 110px;
+    background-color: #d3ad7f;
+    color: white;
+    border: #5c5959;
+}
+
+.item_card:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.item_card:hover h4{
+  color: black;
+}
+
+.item_card:hover .price h5{
+  color: black;
+}
+
+.item_card:hover .price{
+     color: black;
+}
+
+.item_card:hover button h6{
+     color: black;
+}
+
+.products{
+    background: black;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.listing{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.products h2{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.products h2 span{
+     color: #d3ad7f;
+}
+
+.product_card{
+  border: 1px solid white;
+  height: 70vh;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.product_card .icons{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     height: 20px;
+     margin-top: 20px;
+}
+
+.product_card .icons a{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    border: 1px solid rgb(53, 51, 51);
+    padding: 10px;
+    margin-left: 8px;
+   }
+
+.product_card img{
+  margin-top: 50px;
+}
+
+.product_card .starts{
+       color: #d3ad7f;
+}
+
+.product_card .product_info .price{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+
+.product_card .product_info .price h6{
+  margin-left: 4px;
+  text-decoration: line-through;
+  text-decoration-line:line-through;
+  
+}
+
+  
+
